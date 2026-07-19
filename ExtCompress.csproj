@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Company>Soluciones Digitales Camargo</Company>
+    <Copyright>© 2026 Soluciones Digitales Camargo</Copyright>
+    <Product>ExtCompress</Product>
+    <Description>Motor de compresión de ultra velocidad Zstandard desarrollado por Soluciones Digitales Camargo</Description>
+    <AssemblyTitle>ExtCompress</AssemblyTitle>
+    <ApplicationIcon>logo.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="ExtCompress.Installer\**" />
+    <Compile Remove="ExtCompress.Uninstaller\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ZstdSharp.Port" Version="0.8.8" />
+  </ItemGroup>
+
+</Project>

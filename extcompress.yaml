@@ -1,0 +1,33 @@
+# Manifest de Winget para ExtCompress
+# Para subirlo al repositorio oficial: https://github.com/microsoft/winget-pkgs
+
+PackageIdentifier: SolucionesDigitalesCamargo.ExtCompress
+PackageVersion: 1.0.0
+PackageName: ExtCompress
+Publisher: Soluciones Digitales Camargo
+Author: Soluciones Digitales Camargo
+ShortDescription: Motor de compresión y empaquetado ultra rápido basado en Zstandard (.extc)
+License: Comercial / Propietaria
+Copyright: Copyright (c) 2026 Soluciones Digitales Camargo
+Moniker: extcompress
+Tags:
+  - compress
+  - zstd
+  - zstandard
+  - archive
+  - extc
+Commands:
+  - extcompress
+Installers:
+  - Architecture: x64
+    InstallerType: custom
+    # REEMPLAZAR: Reemplaza esta URL con la ruta de descarga directa del instalador (ej: GitHub Releases)
+    InstallerUrl: https://github.com/tu-usuario/extcompress/releases/download/v1.0.0/ExtCompress.exe
+    # REEMPLAZAR: El hash SHA256 de tu ejecutable compilado. Puedes obtenerlo corriendo: Get-FileHash ExtCompress.exe
+    InstallerSha256: 0000000000000000000000000000000000000000000000000000000000000000
+    InstallerSwitches:
+      Silent: --install
+      SilentWithProgress: --install
+    UpgradeBehavior: install
+ManifestType: singleton
+ManifestVersion: 1.6.0
